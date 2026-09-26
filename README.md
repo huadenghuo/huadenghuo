@@ -2,22 +2,30 @@
 
 喜欢把想法做成**能真的跑起来**的东西 —— 物理引擎、化学模拟、电路沙盒、生态演化、轨道力学。
 
-## 🧪 我的项目
+## 🌐 六个在线科学沙盒（点开即玩，无需安装）
 
-| | 项目 | 说明 | 在线试玩 | 源码 |
-|:---:|:---|:---|:---:|:---:|
-| 🧪 | **物理实验沙盒** | 小球 / 斜面 / 磁场 / 电场，自研物理引擎（240Hz 半隐式欧拉、洛伦兹力矢量旋转、库仑摩擦） | [▶ 试玩](https://huadenghuo.github.io/physics-lab/) | [源码](https://github.com/huadenghuo/physics-lab) |
-| ⚗️ | **化学虚拟实验室** | 试剂架、46 条反应、86 种物种，pH 二分法数值求解、Ksp 沉淀与溶解度平衡 | [▶ 试玩](https://huadenghuo.github.io/chemlab/) | [源码](https://github.com/huadenghuo/chemlab) |
-| 🦁 | **草原进化模拟器** | 草—兔—狼三级食物网，Lotka-Volterra 种群振荡与自然选择 | [▶ 试玩](https://huadenghuo.github.io/evolution-sim/) | [源码](https://github.com/huadenghuo/evolution-sim) |
-| ⚡ | **电路逻辑沙盒** | 赛博朋克风数字电路模拟器，拖拽搭逻辑门、实时电平传播 | [▶ 试玩](https://huadenghuo.github.io/logic-sandbox/) | [源码](https://github.com/huadenghuo/logic-sandbox) |
-| 🪐 | **天体轨道实验室** | 三积分器对比（欧拉/蛙跳/RK4）+ 能量误差实时曲线、三体混沌与引力弹弓，自研 N 体引力引擎 | [▶ 试玩](https://huadenghuo.github.io/orbit-lab/) | [源码](https://github.com/huadenghuo/orbit-lab) |
+| | 项目 | 说明 | 在线试玩 |
+|:---:|:---|:---|:---:|
+| 🌿 | **生态系统模拟器** ⭐ 最新 | 六物种四营养级生态模拟。能量守恒账本（误差 <0.001%）、Kleiber 代谢定律、Type III 功能反应、季节循环与营养级联。六物种长期共存 12/12 种子验证 | [▶ 试玩](https://huadenghuo.github.io/ecosystem-lab/) |
+| 🪐 | **天体轨道实验室** | 三积分器对比（欧拉/蛙跳/RK4）+ 能量误差实时曲线、三体混沌与引力弹弓，自研 N 体引力引擎 | [▶ 试玩](https://huadenghuo.github.io/orbit-lab/) |
+| 🧪 | **物理实验沙盒** | 小球 / 斜面 / 磁场 / 电场，自研物理引擎（240Hz 半隐式欧拉、洛伦兹力矢量旋转、库仑摩擦） | [▶ 试玩](https://huadenghuo.github.io/physics-lab/) |
+| ⚗️ | **化学虚拟实验室** | 试剂架、46 条反应、86 种物种，pH 二分法数值求解、Ksp 沉淀与溶解度平衡 | [▶ 试玩](https://huadenghuo.github.io/chemlab/) |
+| 🦁 | **草原进化模拟器** | 草—兔—狼三级食物网，Lotka-Volterra 种群振荡与自然选择 | [▶ 试玩](https://huadenghuo.github.io/evolution-sim/) |
+| ⚡ | **电路逻辑沙盒** | 赛博朋克风数字电路模拟器，拖拽搭逻辑门、实时电平传播 | [▶ 试玩](https://huadenghuo.github.io/logic-sandbox/) |
 
 ## 🔧 共同特点
 
-- **零依赖**：多数项目是单文件 HTML，双击即用，不装任何东西
-- **自研内核**：物理 / 化学 / 生态引擎都是自己写的数值模拟，不是调库
-- **带测试**：物理 17 项、化学 54 项、生态 15 项数值断言，用 Node 直接跑
+- **零依赖**：单文件 HTML，浏览器打开就用，不装任何东西
+- **自研内核**：物理 / 化学 / 生态 / 引力引擎全是自己写的数值模拟，不是调库
+- **带回归测试**：物理 17 项、化学 54 项、生态 63 项断言，`node test.mjs` 直接跑
+- **能量守恒**：生态与轨道模拟都做了守恒校验（生态残差 <0.001%，轨道实时误差曲线）
 - **响应式**：手机、平板、电脑都能用
+
+## 🛠️ 技术偏好
+
+- 单文件、零构建、零依赖 —— 打开就能跑，也方便分享
+- 喜欢把**物理/数学规律**当作设计约束（Kleiber 定律、Type III 功能反应、辛积分器）
+- 用**回归测试**保护关键行为，防止调参时改坏
 
 ## 📫 联系方式
 
